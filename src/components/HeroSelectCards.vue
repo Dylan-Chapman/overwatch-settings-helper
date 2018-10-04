@@ -49,9 +49,9 @@ export default {
 		items() {
 			return [
 				{
-					name: "General",
-					key: "general",
-					image: require( "@/assets/img/heroes/general.png" )
+					name: "All Heroes",
+					key: "all-heroes",
+					image: require( "@/assets/img/heroes/all-heroes.png" )
 				},
 				...heroes
 			];

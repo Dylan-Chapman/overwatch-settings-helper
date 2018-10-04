@@ -24,7 +24,7 @@ export default {
 		items() {
 			return [
 				{
-					name: "General"
+					name: "All Heroes"
 				},
 				...heroes
 			];
