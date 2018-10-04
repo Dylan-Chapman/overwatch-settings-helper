@@ -1,4 +1,6 @@
-export default [
+import deepFreeze from "@/utils/deep-freeze";
+
+export default deepFreeze( [
 	{
 		name: "Toogle Zoom",
 		type: "switch",
@@ -19,4 +21,4 @@ export default [
 		type: "switch",
 		default: true
 	}
-];
+] );

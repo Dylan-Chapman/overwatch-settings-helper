@@ -1,4 +1,6 @@
-export default [
+import deepFreeze from "@/utils/deep-freeze";
+
+export default deepFreeze( [
 	{
 		name: "Toogle Barrier",
 		type: "switch",
@@ -9,4 +11,4 @@ export default [
 		type: "slider",
 		default: 100
 	}
-];
+] );
