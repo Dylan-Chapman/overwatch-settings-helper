@@ -18,7 +18,9 @@
 		</v-toolbar>
 
 		<v-content>
-			<router-view :key="$route.fullPath"></router-view>
+			<transition appear mode="out-in" name="slide-y-transition">
+				<router-view :key="$route.fullPath"></router-view>
+			</transition>
 		</v-content>
 	</v-app>
 </template>
