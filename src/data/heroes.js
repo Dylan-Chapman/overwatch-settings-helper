@@ -2,7 +2,7 @@ export default [
 	{
 		name: "Ana",
 		key: "ana",
-		banner: require( "@/assets/img/hero-banners/ana.jpg" ),
+		banner: require( "@/assets/img/banners/ana.jpg" ),
 		image: require( "@/assets/img/heroes/ana.png" )
 	},
 
