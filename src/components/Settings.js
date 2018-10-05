@@ -1,3 +1,5 @@
+import HeroSelectList from "@/components/HeroSelectList";
+
 export default {
 	name: "Settings",
 
@@ -16,6 +18,7 @@ export default {
 	},
 
 	data: () => ( {
+		editMode: true,
 		keybinds: []
 	} ),
 
@@ -129,22 +132,38 @@ export default {
 
 	render() {
 		return <v-container style="max-width: 1000px;">
+			<v-layout>
+				<v-switch
+					inputValue={this.editMode}
+					label="Edit Mode"
+					onChange={val => this.editMode = val}
+				></v-switch>
+
+				<v-spacer></v-spacer>
+
+				<HeroSelectList></HeroSelectList>
+			</v-layout>
+
 			{this.banner && <v-img
 				class="mb-3"
 				height="300"
 				position="top center"
 				src={this.banner}
+				gradient="to top, rgba(0,0,0,0.6), rgba(0,0,0,0)"
 				width="100%"
 			>
-				<v-container
-					justify-center
+				<v-layout
+					column
 					fill-height
-					style="background-color: rgba(0, 0, 0, 0.4);"
+					pa-4
 				>
-					<span class="display-1 pl-4">
-						{this.title}
-					</span>
-				</v-container>
+					<v-spacer></v-spacer>
+					<v-flex shrink>
+						<span class="display-1">
+							{this.title}
+						</span>
+					</v-flex>
+				</v-layout>
 			</v-img>}
 
 			{this.genSettings( this.settings )}
