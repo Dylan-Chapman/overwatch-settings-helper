@@ -12,6 +12,11 @@ export default new Router( {
 			component: () => import( "@/views/HeroSelect" )
 		},
 		{
+			path: "/settings/all-heroes",
+			name: "allHeroesSettings",
+			component: () => import( "@/views/AllHeroesSettings" )
+		},
+		{
 			path: "/settings/:hero",
 			name: "heroSettings",
 			props: true,
