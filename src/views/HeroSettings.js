@@ -1,4 +1,3 @@
-<script>
 import allHeroesSettings from "@/data/default-settings/all-heroes";
 import heroesInfo from "@/data/heroes";
 import Settings from "@/components/Settings";
@@ -46,4 +45,3 @@ export default {
 		></Settings>;
 	}
 };
-</script>
