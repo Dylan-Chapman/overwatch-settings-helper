@@ -24,7 +24,8 @@ export default {
 		items() {
 			return [
 				{
-					name: "All Heroes"
+					name: "All Heroes",
+					key: "all-heroes"
 				},
 				...heroes
 			];
@@ -33,10 +34,14 @@ export default {
 
 	watch: {
 		selected( hero ) {
-			this.$router.push( {
-				name: "heroSettings",
-				params: { hero }
-			} );
+			if ( hero === "all-heroes" ) {
+				this.$router.push( { name: "allHeroesSettings" } );
+			} else {
+				this.$router.push( {
+					name: "heroSettings",
+					params: { hero }
+				} );
+			}
 		}
 	}
 };
