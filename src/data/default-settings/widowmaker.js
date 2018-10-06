@@ -2,7 +2,7 @@ import deepFreeze from "@/utils/deep-freeze";
 
 export default deepFreeze( [
 	{
-		name: "Toogle Zoom",
+		name: "Toggle Zoom",
 		type: "switch",
 		default: false
 	},

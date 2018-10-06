@@ -2,7 +2,7 @@ import deepFreeze from "@/utils/deep-freeze";
 
 export default deepFreeze( [
 	{
-		name: "Toogle Barrier",
+		name: "Toggle Barrier",
 		type: "switch",
 		default: false
 	},

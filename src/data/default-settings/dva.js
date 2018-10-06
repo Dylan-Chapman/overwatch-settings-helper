@@ -2,7 +2,7 @@ import deepFreeze from "@/utils/deep-freeze";
 
 export default deepFreeze( [
 	{
-		name: "Toogle Defense Matrix",
+		name: "Toggle Defense Matrix",
 		type: "switch",
 		default: false
 	},
