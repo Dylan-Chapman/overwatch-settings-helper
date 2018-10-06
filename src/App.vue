@@ -1,6 +1,15 @@
 <template>
 	<v-app dark>
 		<v-toolbar app expand scroll-toolbar-off-screen>
+			<v-btn
+				:to="{ name: 'heroSelect' }"
+				exact
+				flat
+				icon
+			>
+				<v-icon>home</v-icon>
+			</v-btn>
+
 			<v-toolbar-title v-text="title"></v-toolbar-title>
 		</v-toolbar>
 
